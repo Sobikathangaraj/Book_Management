@@ -1,0 +1,137 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+    margin: 1px;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 92px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}   
+
+.navbar .left{
+    font-size: 32px;
+    margin-left: 20px;
+    padding-left: 38px;
+}
+
+.navbar .right{
+    display: flex;
+    background-color: white;
+    gap:32px; 
+    font-size: 22px;
+    padding-left: 342px;
+    gap: 132px;
+}
+
+.navbar .right a{
+    
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+.navbar .cart{
+    /* padding-left: 32px; */
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.navbar .wishlist{
+    padding-right: 42px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.navbar .right a:hover {
+  color: #e63946;         
+  transform: scale(1.1);  
+  transition: all 0.3s ease;
+}
+
+.navbar .cart:hover,
+.navbar .wishlist:hover {
+  color: #007bff;         
+  transform: scale(1.2);   
+  transition: all 0.3s ease;
+}
+
+.navbar .left:hover {
+  color:black; 
+  transform: scale(1.4);
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+/* ---------------------------------- */
+
+/* Usage of GRID */
+
+.home-container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.bg-image{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headline {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  max-width: 600px;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 12px;
+  color: black;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: transparent;
+}
