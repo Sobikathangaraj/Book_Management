@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../reduxx/bookSlice';
 import { useNavigate } from 'react-router-dom';
-import './BookResult.css';
+import './Bookresult.css';
 
 const BookResult = () => {
   const book = useSelector((state) => state.book.searchedBook);
